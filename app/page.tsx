@@ -18,14 +18,22 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <Stats />
-        <Services />
-        <OurWork />
+        <div id="services" className="scroll-mt-20">
+          <Services />
+        </div>
+        <div id="portfolio" className="scroll-mt-20">
+          <OurWork />
+        </div>
         <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row gap-16">
-          <OurStory />
+          <div id="about" className="scroll-mt-20">
+            <OurStory />
+          </div>
           <MeetOurTeam />
         </div>
-        <LatestInsights />
-        <div className="bg-gray-50 py-16">
+        <div id="blog" className="scroll-mt-20">
+          <LatestInsights />
+        </div>
+        <div id="contact" className="bg-gray-50 py-16 scroll-mt-20">
           <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold text-center mb-4 text-black">Get in Touch</h2>
               <p className="text-center text-gray-600 mb-12">Ready to start your project? Contact us for a free consultation.</p>
