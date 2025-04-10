@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Github, Instagram } from 'lucide-react'; // Example social icons
+import Image from "next/image";
+import { X, Linkedin, Github, Instagram } from 'lucide-react'; // Example social icons
 
 const Footer = () => {
     return (
@@ -10,7 +11,9 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center space-x-2 mb-4">
                             {/* Placeholder for Logo */}
-                           <div className="w-8 h-8 bg-white rounded-full"></div>
+                           <div className="w-8 h-8 bg-white rounded-full">
+                            <Image src="/images/thryve-logo.png" alt="Thryve Logo" width={32} height={32} />
+                           </div>
                            <span className="text-xl font-bold">Thryve</span>
                         </div>
                         <p className="text-sm opacity-80">
@@ -44,7 +47,7 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-4">Connect</h4>
                         <div className="flex space-x-4">
-                            <a href="#" aria-label="Twitter" className="opacity-80 hover:opacity-100"><Twitter size={20} /></a>
+                            <a href="#" aria-label="Twitter" className="opacity-80 hover:opacity-100"><X size={20} /></a>
                             <a href="#" aria-label="LinkedIn" className="opacity-80 hover:opacity-100"><Linkedin size={20} /></a>
                             <a href="#" aria-label="GitHub" className="opacity-80 hover:opacity-100"><Github size={20} /></a>
                             <a href="#" aria-label="Instagram" className="opacity-80 hover:opacity-100"><Instagram size={20} /></a>
